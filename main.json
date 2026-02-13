@@ -1,0 +1,23 @@
+{
+    "img": "https://raw.githubusercontent.com/YourGitHubUsername/it-iz-me/main/avatar.png",
+    "img_alt": "Profile photo",
+    "heading_bold": "hi there, i'm YourName",
+    "heading_light": ": a full stack developer.",
+    "desc_1": "i build stuff with",
+    "tech_stack": [
+      { "iconName": "SI Typescript", "visibleName": "TypeScript" },
+      { "iconName": "SI React", "visibleName": "React" },
+      { "iconName": "SI Nextdotjs", "visibleName": "Next.js" },
+      { "iconName": "SI Python", "visibleName": "Python" }
+    ],
+    "desc_2": "Your short bio or skills summary.",
+    "desc_3": "Why someone should hire you — and what to do next.",
+    "cta_buttons": [
+      { "type": "primary", "label": "Know More", "href": "https://your-site.com", "icon": "SI FileText" },
+      { "type": "secondary", "label": "Get in touch", "href": "mailto:you@example.com", "icon": "BI Send" }
+    ],
+    "social_links": [
+      { "type": "SI Github", "label": "GitHub", "href": "https://github.com/you" },
+      { "type": "SI x", "label": "X", "href": "https://x.com/you" }
+    ]
+  }
