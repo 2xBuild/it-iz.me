@@ -10,11 +10,11 @@ import type { Profile, ProfileTech } from "@/lib/types";
 
 const SKILL_ICON_CLASS = "h-4 w-4 shrink-0";
 
-interface HeroProps {
+interface ProfileIntroProps {
   profile: Profile;
 }
 
-export function Hero({ profile }: HeroProps) {
+export function ProfileIntro({ profile }: ProfileIntroProps) {
   const { requestThemeSwitch } = useTheme();
 
   const imgAlt = profile.img_alt;

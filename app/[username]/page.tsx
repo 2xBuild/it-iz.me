@@ -1,5 +1,5 @@
 import { fetchProfile } from "@/lib/profile";
-import { Hero } from "@/components/sections/profile";
+import { ProfileIntro } from "@/components/sections/profile";
 import { InvalidConfig, NotFound } from "@/components/errors";
 
 interface PageProps {
@@ -15,7 +15,7 @@ export default async function UserPage({ params }: PageProps) {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background">
-      <Hero profile={result.profile} />
+      <ProfileIntro profile={result.profile} />
     </div>
   );
 }

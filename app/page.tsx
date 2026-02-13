@@ -1,4 +1,4 @@
-import { Hero } from "@/components/sections/profile";
+import { ProfileIntro } from "@/components/sections/profile";
 import { fetchProfile } from "@/lib/profile";
 import { NotFound } from "@/components/errors";
 
@@ -7,7 +7,7 @@ export default async function Home() {
   if (result.status !== "ok") return <NotFound />;
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-background py-8">
-      <Hero profile={result.profile} />
+      <ProfileIntro profile={result.profile} />
       <p className="mt-12 text-center text-sm text-neutral-500 dark:text-neutral-400">
         Create your own page.{" "}
         <a
