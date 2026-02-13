@@ -1,4 +1,5 @@
-# wanna-hire.me
+# Cool profile page 
+wanna-hire.me or it-iz.me/YOUR_GITHUB_USERNAME
 
 Your page is live at **`https://wanna-hire.me/YourGitHubUsername`** when you add a repo named `it-iz-me` with a `main.json` profile. This guide shows how to set that up.
 
