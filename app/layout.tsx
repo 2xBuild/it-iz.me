@@ -12,7 +12,12 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Wanna hire me?",
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000"
+  ),
+  title: "That's me",
   description:
     "Everything you need to know about me.",
   icons: {

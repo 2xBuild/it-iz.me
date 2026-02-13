@@ -1,4 +1,4 @@
-import { fetchProfile } from "@/lib/profile";
+import { fetchProfile, resolveProfileImgUrl } from "@/lib/profile";
 import { ProfileIntro } from "@/components/sections/profile";
 import { InvalidConfig, NotFound } from "@/components/errors";
 
@@ -25,9 +25,15 @@ export async function generateMetadata({ params }: PageProps) {
   const result = await fetchProfile(username);
   if (result.status !== "ok") return { title: "Not found" };
   const { profile } = result;
-  const title = profile.heading_bold.replace(/^hi there,\s*i'm\s+/i, "") || username;
+  const imgUrl = resolveProfileImgUrl(username, profile.img);
   return {
-    title: `Wanna hire ${title}?`,
+    title: `That's me ${username}`,
     description: profile.desc_2 || profile.desc_3,
+    icons: {
+      icon: imgUrl,
+    },
+    openGraph: {
+      images: [{ url: `/api/og/${username}` }],
+    },
   };
 }
