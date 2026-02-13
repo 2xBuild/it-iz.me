@@ -11,7 +11,7 @@ export default async function Home() {
       <p className="mt-12 text-center text-sm text-neutral-500 dark:text-neutral-400">
         Create your own page.{" "}
         <a
-          href="https://github.com/2xbuild/it-iz-me"
+          href="https://github.com/2xbuild/it-iz.me"
           target="_blank"
           rel="noopener noreferrer"
           className="underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600 dark:decoration-neutral-500 dark:hover:decoration-neutral-300"
