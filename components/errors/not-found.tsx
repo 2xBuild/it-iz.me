@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const GUIDE_URL = "https://github.com/2xbuild/it-iz.me/README.md";
+const GUIDE_URL = "https://github.com/2xbuild/it-iz.me";
 
 export function NotFound() {
   return (
